@@ -1,0 +1,32 @@
+﻿<Window x:Class="YoutubeVideoDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YoutubeVideoDownloader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="900" ResizeMode="CanMinimize" FontSize="16">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/vecteezy_abstrack-flat-background_gb1020.jpg"/>
+        </Grid.Background>
+        <Button Name="btn_dizin" Content="Kayıt Yeri Seç" HorizontalAlignment="Left" Margin="562,313,0,0" VerticalAlignment="Top" Width="126" Height="30" Click="btn_dizin_Click" Cursor="Hand"/>
+        <Button Name="btn_indir" Content="İndir" HorizontalAlignment="Left" Margin="625,371,0,0" VerticalAlignment="Top" Width="125" Height="30" Click="btn_indir_Click" Cursor="Hand"/>
+        <TextBox Name="txt_url" HorizontalAlignment="Center" Margin="0,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="524" Height="30" Background="Transparent"/>
+        <ComboBox Name="cmb_format" HorizontalAlignment="Left" VerticalAlignment="Top" Width="262" Height="30" Margin="188,259,0,0" Cursor="Hand"></ComboBox>
+        <TextBox Name="txt_dizin" HorizontalAlignment="Left" Margin="500,261,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Height="28" Background="Transparent"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="720,70,0,0" VerticalAlignment="Top" Click="Button_Click" Height="30" Width="30" BorderThickness="2" BorderBrush="Black" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="/paste.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="İndirme Formatı" HorizontalAlignment="Left" Margin="188,223,0,0" VerticalAlignment="Top" Height="31"/>
+        <Label Content="Youtube Adresi" HorizontalAlignment="Left" Margin="188,21,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kayıt Yeri" HorizontalAlignment="Left" Margin="500,220,0,0" VerticalAlignment="Top"/>
+        <Image Name="image" HorizontalAlignment="Left"  Margin="188,115,0,0" VerticalAlignment="Top" Width="150" Height="100"/>
+        <Label Name="lbl_islem" Content="" HorizontalAlignment="Left" Margin="188,371,0,0" VerticalAlignment="Top" Width="404" Height="30"/>
+        <Label Name="lbl_isim" Content="" HorizontalAlignment="Left" Margin="390,115,0,0" VerticalAlignment="Top" Width="360" Height="100"/>
+        <Image Name="image_proses" HorizontalAlignment="Left" Height="69" Margin="188,425,0,0" VerticalAlignment="Top" Width="217" Source="/loading.gif" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
